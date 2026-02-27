@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
                 .padding(24.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            Text(text = "Rounded pill-shaped buttons:", style = MaterialTheme.typography.titleMedium)
+        /*    Text(text = "Rounded pill-shaped buttons:", style = MaterialTheme.typography.titleMedium)
 
             CapsuleRadioGroup(
                 options = options,
@@ -85,7 +85,7 @@ class MainActivity : ComponentActivity() {
             Spacer(modifier = Modifier.height(24.dp))
 
 
-            Text(text = " Uses icons for selection:", style = MaterialTheme.typography.titleMedium)
+          Text(text = " Uses icons for selection:", style = MaterialTheme.typography.titleMedium)
 
             IconRadioGroup(
                 options = options,
@@ -96,18 +96,18 @@ class MainActivity : ComponentActivity() {
             )
 
             Spacer(modifier = Modifier.height(24.dp))
+*/
+              Text(text = "Outlined boxes with custom colors:", style = MaterialTheme.typography.titleMedium)
 
-            Text(text = "Outlined boxes with custom colors:", style = MaterialTheme.typography.titleMedium)
+             OutlinedRadioGroup(
+                 options = options,
+                 selectedOptionId = selectedOption,
+                 onOptionSelected = { option ->
+                     selectedOption = option.id
+                 }
+             )
 
-            OutlinedRadioGroup(
-                options = options,
-                selectedOptionId = selectedOption,
-                onOptionSelected = { option ->
-                    selectedOption = option.id
-                }
-            )
-
-            Spacer(modifier = Modifier.height(24.dp))
+             Spacer(modifier = Modifier.height(24.dp))
 
         }
     }
