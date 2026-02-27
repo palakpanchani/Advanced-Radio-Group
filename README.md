@@ -1,65 +1,43 @@
-# Advanced Radio Group
+# Advanced Radio Group for Jetpack Compose
 
-![Kotlin](https://img.shields.io/badge/Kotlin-1.9+-blue.svg)
-![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material3-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Platform](https://img.shields.io/badge/Platform-Android-green)
-![API](https://img.shields.io/badge/API-21%2B-orange)
-
-A modern, reusable **Jetpack Compose Material 3 RadioGroup library** providing multiple customizable radio button styles for Android developers.
-
-Designed with clean architecture, reusability, and scalability in mind.
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue.svg)](https://kotlinlang.org/)
+[![Android](https://img.shields.io/badge/Android-24%2B-green.svg)](https://developer.android.com/)
+[![Material3](https://img.shields.io/badge/Material3-Compose-purple.svg)](https://developer.android.com/jetpack/compose)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
-## ✨ Features
-
-- ✅ Material 3 based UI
-- ✅ Multiple Radio Styles
-- ✅ Fully customizable
-- ✅ Clean and modular code structure
-- ✅ Developer-friendly API
-- ✅ Lightweight & easy integration
-- ✅ Supports vertical scrolling
-- ✅ Production-ready UI components
+## 🚀 Overview
+**Advanced Radio Group** is a fully customizable Material 3-based radio button module for Jetpack Compose.  
+Designed for Android developers, it offers **multi-style radio buttons** with **editable colors, shapes, and icons**. Perfect for **reusable modules** in Android apps and for enhancing your portfolio.
 
 ---
 
-## 🎨 Available Styles
+## 🎨 Styles Included
 
-### 1️⃣ CapsuleRadioGroup
-Rounded pill-shaped selectable buttons.
+| Style Name | Preview |
+|------------|---------|
+| **Capsule Radio** | ![Capsule Style](docs/screenshots/capsule.png) |
+| **Icon Radio** | ![Icon Style](docs/screenshots/icon.png) |
+| **Rounded Radio** | ![Rounded Style](docs/screenshots/rounded.png) |
 
-### 2️⃣ IconRadioGroup
-Uses Material icons for selection state.
+---
 
-### 3️⃣ OutlinedRadioGroup
-Minimal outlined style with customizable borders.
-
-### 4️⃣ ClassicRadioGroup
-Standard Material 3 circular radio buttons.
+## ⚡ Features
+- 3+ **unique Material 3 radio styles**
+- Fully **customizable** (colors, sizes, shapes, icons)
+- **Composable API** — works seamlessly with Jetpack Compose
+- **Reusable module** for Android projects
+- **Vertical scroll support** for large option lists
+- Lightweight and dependency-friendly
 
 ---
 
 ## 📦 Installation
 
-### Option 1: Local Module
+Add this module as a dependency in your app’s `build.gradle`:
 
-```kotlin
-implementation(project(":advancedradio"))
-
-## 📦 Usage Example
-
-val options = listOf(
-    AdvancedRadioOption("1", "Option 1"),
-    AdvancedRadioOption("2", "Option 2"),
-    AdvancedRadioOption("3", "Option 3")
-)
-
-var selected by remember { mutableStateOf<String?>(null) }
-
-CapsuleRadioGroup(
-    options = options,
-    selectedOptionId = selected,
-    onOptionSelected = { selected = it.id }
-)
+```gradle
+dependencies {
+    implementation("com.palak.advancedradio:advancedradio:1.0.0")
+}
