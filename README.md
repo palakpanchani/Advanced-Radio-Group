@@ -17,9 +17,9 @@ Designed for Android developers, it offers **multi-style radio buttons** with **
 
 | Style Name | Preview |
 |------------|---------|
-| **Capsule Radio** | ![Capsule Style](docs/screenshots/capsule.png) |
-| **Icon Radio** | ![Icon Style](docs/screenshots/icon.png) |
-| **Rounded Radio** | ![Rounded Style](docs/screenshots/rounded.png) |
+| **Capsule Radio** | ![Capsule Style](screenshots/capsule.png) |
+| **Icon Radio** | ![Icon Style](screenshots/icon.png) |
+| **Rounded Radio** | ![Rounded Style](screenshots/rounded.png) |
 
 ---
 
